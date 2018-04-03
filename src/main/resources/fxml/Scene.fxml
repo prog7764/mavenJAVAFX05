@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="669.0" prefWidth="691.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.steph.mavenjavafx05.FXMLController">
+    <children>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="522.0" prefWidth="691.0" AnchorPane.bottomAnchor="58.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TabPane prefHeight="529.0" prefWidth="691.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="-7.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <tabs>
+                <Tab id="TAB_1_DS" fx:id="FXID_TAB_1_DS" text="1. Répartition des DS">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <DatePicker fx:id="FXID_DPR_1_DATE" layoutX="513.0" layoutY="87.0" onAction="#OnAction_DPR_1_DATE" prefHeight="27.0" prefWidth="116.0" AnchorPane.leftAnchor="513.0" AnchorPane.topAnchor="87.0" />
+                              <Button fx:id="FXID_BTN_1_INIT" layoutX="27.0" layoutY="14.0" mnemonicParsing="false" onAction="#OnAction_BTN_1_INIT" prefHeight="27.0" prefWidth="122.0" text="Initialisation ..." AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="14.0" />
+                              <Label layoutX="25.0" layoutY="70.0" text="Premier DS" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="70.0" />
+                              <Label layoutX="276.0" layoutY="72.0" text="Second DS" AnchorPane.leftAnchor="276.0" AnchorPane.topAnchor="72.0" />
+                              <Label layoutX="513.0" layoutY="72.0" text="Date" AnchorPane.leftAnchor="513.0" AnchorPane.topAnchor="72.0" />
+                              <ChoiceBox fx:id="FXID_CCB_1_DS1" layoutX="30.0" layoutY="90.0" prefWidth="200.0" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="87.0" />
+                              <ChoiceBox fx:id="FXID_CCB_1_DS2" layoutX="275.0" layoutY="90.0" prefWidth="200.0" AnchorPane.leftAnchor="276.0" AnchorPane.topAnchor="89.0" />
+                              <TextArea fx:id="FXID_TXA_1_MESSAGES" layoutX="11.0" layoutY="440.0" prefHeight="131.0" prefWidth="602.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="59.0" AnchorPane.topAnchor="440.0" />
+                              <Separator layoutX="78.0" layoutY="266.0" prefHeight="7.0" prefWidth="556.0" />
+                              <Label layoutX="31.0" layoutY="259.0" prefHeight="20.0" prefWidth="58.0" text="Salles" AnchorPane.leftAnchor="31.0" AnchorPane.topAnchor="259.0" />
+                              <Label layoutX="30.0" layoutY="49.0" text="DS" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="49.0" />
+                              <Separator layoutX="73.0" layoutY="57.0" prefHeight="10.0" prefWidth="486.0" AnchorPane.leftAnchor="73.0" AnchorPane.topAnchor="57.0" />
+                              <ChoiceBox fx:id="FXID_CCB_1_SALLE00" layoutX="31.0" layoutY="282.0" prefHeight="27.0" prefWidth="140.0" AnchorPane.leftAnchor="31.0" AnchorPane.topAnchor="282.0" />
+                              <ChoiceBox fx:id="FXID_CCB_1_SALLE01" layoutX="185.0" layoutY="282.0" prefHeight="27.0" prefWidth="140.0" AnchorPane.leftAnchor="185.0" AnchorPane.topAnchor="282.0" />
+                              <ChoiceBox fx:id="FXID_CCB_1_SALLE02" layoutX="336.0" layoutY="282.0" prefHeight="27.0" prefWidth="140.0" AnchorPane.leftAnchor="336.0" AnchorPane.topAnchor="282.0" />
+                              <ChoiceBox fx:id="FXID_CCB_1_SALLE06" layoutX="491.0" layoutY="315.0" prefHeight="27.0" prefWidth="140.0" AnchorPane.leftAnchor="491.0" AnchorPane.topAnchor="315.0" />
+                              <ChoiceBox fx:id="FXID_CCB_1_SALLE07" layoutX="185.0" layoutY="345.0" prefHeight="27.0" prefWidth="140.0" AnchorPane.leftAnchor="185.0" AnchorPane.topAnchor="345.0" />
+                              <ChoiceBox fx:id="FXID_CCB_1_SALLE03" layoutX="491.0" layoutY="282.0" prefHeight="27.0" prefWidth="140.0" AnchorPane.leftAnchor="491.0" AnchorPane.topAnchor="282.0" />
+                              <ChoiceBox fx:id="FXID_CCB_1_SALLE08" layoutX="336.0" layoutY="345.0" prefHeight="27.0" prefWidth="140.0" AnchorPane.leftAnchor="336.0" AnchorPane.topAnchor="345.0" />
+                              <ChoiceBox fx:id="FXID_CCB_1_SALLE04" layoutX="185.0" layoutY="315.0" prefHeight="27.0" prefWidth="140.0" AnchorPane.leftAnchor="185.0" AnchorPane.topAnchor="315.0" />
+                              <ChoiceBox fx:id="FXID_CCB_1_SALLE09" layoutX="491.0" layoutY="345.0" prefHeight="27.0" prefWidth="140.0" AnchorPane.leftAnchor="491.0" AnchorPane.topAnchor="345.0" />
+                              <ChoiceBox fx:id="FXID_CCB_1_SALLE05" layoutX="336.0" layoutY="315.0" prefHeight="27.0" prefWidth="140.0" AnchorPane.leftAnchor="336.0" AnchorPane.topAnchor="315.0" />
+                              <Label layoutX="32.0" layoutY="310.0" prefHeight="18.0" prefWidth="138.0" text="Salle des tiers temps " AnchorPane.leftAnchor="32.0" AnchorPane.topAnchor="310.0" />
+                              <Label layoutX="30.0" layoutY="372.0" text="Fichier résultat " AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="372.0" />
+                              <TextField fx:id="FXID_TXF_1_RESULTAT" layoutX="30.0" layoutY="392.0" onAction="#OnAction_TXF_1_RESULTAT" prefHeight="27.0" prefWidth="563.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="98.0" AnchorPane.topAnchor="392.0" />
+                              <Button fx:id="FXID_BTN_1_RESULTAT" layoutX="601.0" layoutY="392.0" mnemonicParsing="false" onAction="#OnAction_BTN_1_RESULTAT" text="..." AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="392.0" />
+                              <Button fx:id="FXID_BTN_1_GO" layoutX="484.0" layoutY="14.0" mnemonicParsing="false" onAction="#OnAction_BTN_1_GO" text="GO" AnchorPane.leftAnchor="480.0" AnchorPane.topAnchor="14.0" />
+                              <Label layoutX="33.0" layoutY="328.0" prefHeight="17.0" prefWidth="137.0" text="et aménagés" />
+                              <ChoiceBox fx:id="FXID_CCB_1_DELTATT_DS1" layoutX="130.0" layoutY="155.0" prefHeight="27.0" prefWidth="100.0" />
+                              <Label layoutX="31.0" layoutY="126.0" prefHeight="17.0" prefWidth="15.0" text="A" />
+                              <Label layoutX="119.0" layoutY="126.0" prefHeight="17.0" prefWidth="37.0" text="Durée" />
+                              <ChoiceBox fx:id="FXID_CCB_1_DUREE_DS1" layoutX="165.0" layoutY="120.0" prefHeight="27.0" prefWidth="65.0" />
+                              <Label layoutX="280.0" layoutY="128.0" text="A" />
+                              <ChoiceBox fx:id="FXID_CCB_1_DEBUT_DS2" layoutX="295.0" layoutY="120.0" prefHeight="27.0" prefWidth="65.0" />
+                              <Label layoutX="369.0" layoutY="126.0" text="Durée" />
+                              <ChoiceBox fx:id="FXID_CCB_1_DUREE_DS2" layoutX="412.0" layoutY="120.0" prefHeight="27.0" prefWidth="65.0" />
+                              <Label layoutX="31.0" layoutY="156.0" prefHeight="17.0" prefWidth="79.0" text="Tiers temps" />
+                              <ChoiceBox fx:id="FXID_CCB_1_DEBUT_DS1" layoutX="45.0" layoutY="120.0" prefHeight="27.0" prefWidth="65.0" />
+                              <ChoiceBox fx:id="FXID_CCB_1_DELTATT_DS2" layoutX="376.0" layoutY="153.0" prefHeight="27.0" prefWidth="97.0" />
+                              <Label layoutX="277.0" layoutY="158.0" prefHeight="17.0" prefWidth="81.0" text="Tiers temps" />
+                              <TextArea fx:id="FXID_TXA_1_MESSAGES_DS1" layoutX="30.0" layoutY="188.0" prefHeight="27.0" prefWidth="198.0" />
+                              <TextArea fx:id="FXID_TXA_1_MESSAGES_DS2" layoutX="277.0" layoutY="188.0" prefHeight="27.0" prefWidth="198.0" />
+                              <Button fx:id="FXID_BTN_1_GOTEST" layoutX="532.0" layoutY="14.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="97.0" text="GO test" />
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab id="TAB_2_HEURES" fx:id="FXID_TAB_2_HEURES" text="2. Déclaration des Heures">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                                <Button fx:id="FXID_BTN_2_CALCUL_HEURES" layoutX="32.0" layoutY="71.0" onAction="#OnAction_BTN_2_CALCUL_HEURES" prefHeight="27.0" prefWidth="131.0" text="Calcul des Heures" />
+                                <Label fx:id="label" layoutX="45.0" layoutY="45.0" minHeight="16" minWidth="69" />
+                              <Label layoutX="45.0" layoutY="114.0" text="Label" />
+                              <Button fx:id="FXID_BTN_2_INIT" layoutX="32.0" layoutY="27.0" mnemonicParsing="false" onAction="#OnAction_BTN_2_INIT" prefHeight="27.0" prefWidth="131.0" text="Initialisation ..." />
+                              <TextArea fx:id="FXID_TXA_2_MESSAGES" layoutX="25.0" layoutY="440.0" prefHeight="122.0" prefWidth="635.0" />
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab id="TAB_3_NOTES" fx:id="FXID_TAB_3_NOTES" text="3. Notes">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="33.0" layoutY="106.0" text="Fichier source (.xls ou .xlsx)" />
+                              <Label layoutX="33.0" layoutY="123.0" text="-&gt;Scolpedagogie &gt; 7 nains &gt; ... pour Affichage &gt; GO !" />
+                              <TextField fx:id="FXID_TXF_3_XLS_SCOL" layoutX="33.0" layoutY="140.0" prefHeight="27.0" prefWidth="451.0" />
+                              <Button fx:id="FXID_BTN_3_XLS_SCOL" layoutX="494.0" layoutY="140.0" mnemonicParsing="false" onAction="#OnAction_BTN_3_XLS_SCOL" text="..." />
+                              <TextArea fx:id="FXID_TXA_3_MESSAGES" layoutX="33.0" layoutY="351.0" prefHeight="200.0" prefWidth="627.0" />
+                              <Button fx:id="FXID_BTN_3_GO" layoutX="614.0" layoutY="317.0" mnemonicParsing="false" onAction="#OnAction_BTN_3_GO" text="GO !" />
+                           </children></AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab id="TAB_9_PARAMETRES" fx:id="FXID_TAB_9_PARAMETRES" text="9. Parametres">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="462.0" prefWidth="585.0">
+                           <children>
+                              <TextField fx:id="FXID_TXF_9_ETUDIANTS" editable="false" layoutX="30.0" layoutY="48.0" prefHeight="27.0" prefWidth="463.0" promptText="Fichier (.xlsx)" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="51.0" />
+                              <Label layoutX="32.0" layoutY="14.0" text="Fichier Etudiants IF avec (Numero, Nom, Annee, IP ...) pour (DS, Notes)" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="17.0" />
+                              <Label layoutX="30.0" layoutY="160.0" text="Fichier Etudiants Tiers Temps avec (Numero, Nom ...) pour (DS)" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="160.0" />
+                              <TextField fx:id="FXID_TXF_9_TIERSTEMPS" layoutX="30.0" layoutY="194.0" prefHeight="27.0" prefWidth="462.0" promptText="Fichier (.xlsx)" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="194.0" />
+                              <Button fx:id="FXID_BTN_9_ETUDIANTS" layoutX="545.0" layoutY="48.0" mnemonicParsing="false" onAction="#OnAction_BTN_9_ETUDIANTS" text="..." AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="51.0" />
+                              <Button fx:id="FXID_BTN_9_TIERSTEMPS" layoutX="631.0" layoutY="194.0" mnemonicParsing="false" onAction="#OnAction_BTN_9_TIERSTEMPS" text="..." AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="194.0" />
+                              <Label layoutX="30.0" layoutY="230.0" text="Fichier des salles avec (Nom, Capacite) pour (DS) " AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="230.0" />
+                              <TextField fx:id="FXID_TXF_9_SALLES" layoutX="30.0" layoutY="264.0" prefHeight="27.0" prefWidth="462.0" promptText="Fichier (.xlsx)Fichier (.xlsx)" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="264.0" />
+                              <Button fx:id="FXID_BTN_9_SALLES" layoutX="631.0" layoutY="264.0" mnemonicParsing="false" onAction="#OnAction_BTN_9_SALLES" text="..." AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="264.0" />
+                              <Label layoutX="32.0" layoutY="31.0" prefHeight="17.0" prefWidth="591.0" text="-&gt; OpenReports &gt; Scolarité département-maquettes et IP &gt; IP-étudiants_détail &gt;... IF " AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="34.0" />
+                              <Label layoutX="30.0" layoutY="177.0" text="-&gt; Fichier perso ... )" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="177.0" />
+                              <Label layoutX="30.0" layoutY="247.0" text="(Source : Fichier &gt; ... )" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="247.0" />
+                              <Label layoutX="30.0" layoutY="89.0" text="Fichier Etudiants Echange avec (Numero, Nom, Annee, IP ...) pour (DS, Notes)" />
+                              <TextField fx:id="FXID_TXF_9_ETUDIANTS_ECHANGES" editable="false" layoutX="30.0" layoutY="123.0" prefHeight="27.0" prefWidth="590.0" promptText="Fichier (.xlsx)" />
+                              <Button fx:id="FXID_BTN_9_ETUDIANTS_ECHANGES" layoutX="631.0" layoutY="123.0" mnemonicParsing="false" onAction="#OnAction_BTN_9_ETUDIANTS_ECHANGES" text="..." />
+                              <Label layoutX="30.0" layoutY="106.0" prefHeight="17.0" prefWidth="591.0" text="-&gt; OpenReports &gt; Scolarité département-maquettes et IP &gt; IP-étudiants_détail &gt;... Echanges " />
+                              <Label layoutX="30.0" layoutY="371.0" prefHeight="17.0" prefWidth="584.0" text="Fichier créneaux 3IF réservations des salles (.csv Yann ...) pour (Déclaration des Heures)" />
+                              <Label layoutX="30.0" layoutY="388.0" prefHeight="17.0" prefWidth="479.0" text="(Source : https://servif-cocktail.insa-lyon.fr/EdT/3IF.csv -&gt; .xlsx ... )" />
+                              <TextField fx:id="FXID_TXF_9_CRENEAUX_3IF" layoutX="30.0" layoutY="405.0" prefHeight="27.0" prefWidth="590.0" />
+                              <Button fx:id="FXID_BTN_9_CRENEAUX_3IF" layoutX="631.0" layoutY="405.0" mnemonicParsing="false" onAction="#OnAction_BTN_9_CRENEAUX_3IF" text="..." />
+                              <Label layoutX="30.0" layoutY="439.0" text="Fichier créneaux 4IF réservations des salles (.csv Yann ...) pour (Déclaration des Heures)" />
+                              <Label layoutX="30.0" layoutY="456.0" text="(Source : https://servif-cocktail.insa-lyon.fr/EdT/4IF.csv -&gt; .xlsx ... )" />
+                              <TextField fx:id="FXID_TXF_9_CRENEAUX_4IF" layoutX="30.0" layoutY="473.0" prefHeight="27.0" prefWidth="590.0" />
+                              <Button fx:id="FXID_BTN_9_CRENEAUX_4IF" layoutX="631.0" layoutY="473.0" mnemonicParsing="false" onAction="#OnAction_BTN_9_CRENEAUX_4IF" text="..." />
+                              <Label layoutX="30.0" layoutY="510.0" text="Fichier créneaux 5IF réservations des salles (.csv Yann ...) pour (Déclaration des Heures)" />
+                              <Label layoutX="30.0" layoutY="527.0" text="(Source : https://servif-cocktail.insa-lyon.fr/EdT/5IF.csv -&gt; .xlsx ... )" />
+                              <TextField fx:id="FXID_TXF_9_CRENEAUX_5IF" layoutX="30.0" layoutY="544.0" prefHeight="27.0" prefWidth="590.0" />
+                              <Button fx:id="FXID_BTN_9_CRENEAUX_5IF" layoutX="631.0" layoutY="544.0" mnemonicParsing="false" onAction="#OnAction_BTN_9_CRENEAUX_5IF" text="..." />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </AnchorPane>
+      <ButtonBar layoutX="7.0" layoutY="544.0" prefHeight="40.0" prefWidth="567.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="30.0">
+        <buttons>
+          <Button fx:id="FXID_BTN_QUIT" minWidth="48.0" mnemonicParsing="false" onAction="#OnAction_BTN_QUIT" prefHeight="27.0" text="Quitter" />
+        </buttons>
+      </ButtonBar>
+    </children>
+</AnchorPane>
